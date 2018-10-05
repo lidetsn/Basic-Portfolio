@@ -1,0 +1,188 @@
+/*Teal color (used for headings and backgrounds): `#4aaaa5`
+   * Regular font color (used for paragraphs and 
+     all text besides the headings): `#777777`
+   * Main header background color: `#ffffff`
+   * Main header border color: `#cccccc`
+   * Footer background color: `#666666`
+   * Main content background color: `#ffffff`
+   * Main content border color: `#dddddd`
+2. Fonts:
+   * For heading fonts use `font-family: 'Georgia', Times, Times New Roman, serif;`.
+   * For all other fonts use `'Arial', 'Helvetica Neue', Helvetica, sans-serif;`.*/
+*{
+    box-sizing: border-box;
+}
+
+body{
+   background-image: url("../images/gravel.png");
+}
+
+
+header{
+    background-color: #ffffff;
+    border: 2px solid #cccccc;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+       
+}
+#headerName{
+    float: left;
+    width: 280px;
+    height: 72px;/*hight of header minus its border 80-4-4*/
+    margin-top: 2px;
+    padding: 25px 15px;
+    position: relative;
+    left: 175px;/*section left margin plus its aproximate browser defaul 170+5*/
+    color: #ffffff;
+    background-color: #4aaaa5;
+    border: 1px solid;
+    border-radius: 15px;
+    
+}
+nav{
+    float: left;  
+    border: 2px ;
+    position: relative;
+    left: 580px;
+    width:355px;
+    margin-top: 15px;
+}
+header::after{
+   content: "";
+   clear: both;
+    display: block;
+
+}
+ul.bar{
+    list-style-type:none;
+    
+}
+li.bar {
+  
+   display: inline;
+  
+}
+li a{
+   
+    padding: 15px ;
+    text-decoration: none;
+    color: #777777;      
+}
+ul.skill,#skill{
+    color: #777777;
+    list-style-type: square;
+    padding-left: 110px;
+}
+/*changes the background of the current link */
+.aboutme a.aboutme,
+.portfolio a.portfolio,
+.contact a.contact {
+
+    background:#4aaaa5; 
+    color:#ffffff;
+  }
+a.bar:link{
+    color: #777777;    
+}
+/*a.bar:visited{
+    color: #777777;
+    
+}*/
+a.bar:hover{
+    background-color: #4aaaa5;
+    color: #ffffff;
+}
+a.bar:active{
+    color: #777777;
+    background-color: #4bbb99;
+
+}
+
+
+section{
+    background-color: #ffffff;
+     width: 960px; 
+     margin: 100px 170px;
+     border: 2px #dddddd;
+     border-radius: 50px;
+    
+}
+.sectionName{
+    padding: 20px 40px;
+}
+#profileimage{
+    float: left;
+    width: 200px;
+    height: 200px;
+    border: 20px solid #ffffff;
+}
+.placeholder{
+    margin-left: 145px;
+}
+p{
+    color: #777777;
+    text-align: justify;
+    font-family: Georgia, Times, Times, 'New Roman', serif;
+    padding-left: 15px;
+    padding-right: 10px;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: Georgia, Times, Times, 'New Roman', serif;
+    color: #4aaaa5;   
+}
+
+form{
+    width: 800px;
+    margin: 0px 30px;
+    
+}
+.inp{
+    width: 600px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    padding: 12px 15px;
+    border-radius: 4px;
+    
+    
+}
+.inp:focus{
+    background-color:  #f8f8f8;
+
+}
+label{
+    color: #777777;
+    
+      
+}
+#btn{
+    color: #ffffff;
+    background-color: #4aaaa5;
+    padding: 16px 30px;
+    cursor: pointer;
+ 
+ }
+ #btn:focus{
+    color: #777777;
+    background-color: #4bbb99;
+ }
+
+
+footer{
+    background-color: #666666;
+    padding: 10px;
+    text-align: center;
+    color: #ffffff;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    
+    
+    
+    
+    
+    
+}
